@@ -1,0 +1,7 @@
+#============= untrusted_app ==============
+allow untrusted_app adsprpcd_exec:file getattr;
+allow untrusted_app audiod_exec:file getattr;
+allow untrusted_app bootanim_exec:file getattr;
+allow untrusted_app logd_exec:file getattr;
+allow untrusted_app tombstone_data_file:dir getattr;
+
