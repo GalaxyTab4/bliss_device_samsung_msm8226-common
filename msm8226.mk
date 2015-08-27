@@ -29,6 +29,19 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 1280
 
+
+#Bliss Audio Mod
+BLISS_AUDIO_MOD := viper
+
+# Packs
+PRODUCT_PACKAGES += \
+	libssh \
+	ssh \
+	sftp \
+	scp \
+	sshd \
+	ssh-keygen
+
 # Dalvik VM config for 1536MB (1.5GB) RAM devices
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
@@ -152,7 +165,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
-    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
+    frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
 
 # Power
 PRODUCT_PACKAGES += \
