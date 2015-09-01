@@ -172,6 +172,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.msm8226
 
+# Misc dependency packages
+PRODUCT_PACKAGES += \
+    curl \
+    libnl_2 \
+    libbson \
+    libcnefeatureconfig \
+    libtinyxml \
+    libxml2
+
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.isUsbOtgEnabled=true \
