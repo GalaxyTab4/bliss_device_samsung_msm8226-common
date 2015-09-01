@@ -1,0 +1,25 @@
+From 9a696cce63d4729d20135bc6326f3f967eca5800 Mon Sep 17 00:00:00 2001
+From: sub77 <sub77@ymail.com>
+Date: Thu, 6 Aug 2015 01:56:30 +0200
+Subject: [PATCH] added matisse and falcon
+
+---
+ kexec/arch/arm/mach-shamu.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/kexec/arch/arm/mach-shamu.c b/kexec/arch/arm/mach-shamu.c
+index d1fb092..5866dc9 100644
+--- a/kexec/arch/arm/mach-shamu.c
++++ b/kexec/arch/arm/mach-shamu.c
+@@ -210,7 +210,7 @@ exit:
+ }
+ 
+ const struct arm_mach arm_mach_shamu = {
+-    .boardnames = { "shamu", NULL },
++    .boardnames = { "shamu", "matissewifi", "matissewifiue", "matisse3g", "matisselte", "matisse", NULL },
+     .choose_dtb = shamu_choose_dtb,
+     .add_extra_regs = shamu_add_extra_regs,
+ };
+-- 
+2.1.0
+
