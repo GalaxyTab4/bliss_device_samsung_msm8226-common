@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # inherit from the proprietary version
--include vendor/samsung/msm8226-common/BoardConfigVendor.mk
+$(call inherit-product-if-exists, vendor/samsung/msm8226-common/BoardConfigVendor.mk)
 
 LOCAL_PATH := device/samsung/msm8226-common
 
