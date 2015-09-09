@@ -17,7 +17,7 @@
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8226
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 
 # Architecture
 TARGET_CPU_VARIANT := krait
@@ -28,11 +28,12 @@ TARGET_QCOM_AUDIO_VARIANT := caf-bfam
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_QCOM := true
+BLUETOOTH_HCI_USE_MCT := true
 
 # Camera
 TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
-COMMON_GLOBAL_CFLAGS += -DSAMSUNG_CAMERA_HARDWARE
 
 # Charger
 BOARD_BATTERY_DEVICE_NAME := "battery"
@@ -40,10 +41,10 @@ BOARD_CHARGING_CMDLINE_NAME := "androidboot.bootchg"
 BOARD_CHARGING_CMDLINE_VALUE := "true"
 
 # Display
-BOARD_EGL_CFG := device/samsung/msm8226-common/configs/egl.cfg
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_QCOM_DISPLAY_VARIANT := caf-bfam
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
-OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.

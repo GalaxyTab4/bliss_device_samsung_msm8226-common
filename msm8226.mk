@@ -51,17 +51,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
+# Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.rild.nitz_plmn="" \
-    persist.rild.nitz_long_ons_0="" \
-    persist.rild.nitz_long_ons_1="" \
-    persist.rild.nitz_long_ons_2="" \
-    persist.rild.nitz_long_ons_3="" \
-    persist.rild.nitz_short_ons_0="" \
-    persist.rild.nitz_short_ons_1="" \
-    persist.rild.nitz_short_ons_2="" \
-    persist.rild.nitz_short_ons_3=""
-
+    qcom.bt.le_dev_pwr_class=1 \
+    ro.bluetooth.dun=false \
+    ro.qualcomm.bt.hci_transport=smd \
+    ro.bluetooth.sap=false \
+    ro.qualcomm.bluetooth.sap=false \
+    ro.qualcomm.bluetooth.ftp=true \
+    ro.qualcomm.bluetooth.hfp=true \
+    ro.qualcomm.bluetooth.hsp=true \
+    ro.qualcomm.bluetooth.map=true \
+    ro.qualcomm.bluetooth.nap=true \
+    ro.qualcomm.bluetooth.opp=true \
+    ro.qualcomm.bluetooth.pbap=true
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 
@@ -136,9 +139,9 @@ PRODUCT_PACKAGES += \
     power.msm8226
 
 # QRNGD
-PRODUCT_PACKAGES += \
-    qrngd \
-    qrngp
+#PRODUCT_PACKAGES += \
+#    qrngd \
+#    qrngp
 
 # USB
 PRODUCT_PACKAGES += \
