@@ -65,6 +65,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bluetooth.nap=true \
     ro.qualcomm.bluetooth.opp=true \
     ro.qualcomm.bluetooth.pbap=true
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 
@@ -108,8 +109,8 @@ PRODUCT_PACKAGES += \
     memtrack.msm8226
 
 # IR
-# PRODUCT_PACKAGES += \
-#    consumerir.msm8226
+PRODUCT_PACKAGES += \
+    consumerir.msm8226
 
 # Media
 PRODUCT_COPY_FILES += \
