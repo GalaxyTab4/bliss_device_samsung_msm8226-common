@@ -19,6 +19,9 @@ LOCAL_PATH := device/samsung/msm8226-common
 
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/msm8226-common/include
 
+# Legacy MMAP for pre-lollipop blobs
+BOARD_USES_LEGACY_MMAP := true
+
 # Architecture
 TARGET_CPU_MEMCPY_BASE_OPT_DISABLE := true
 TARGET_CPU_VARIANT := krait
