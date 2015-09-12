@@ -176,6 +176,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.isUsbOtgEnabled=true \
     persist.sys.usb.config=mtp
 
+
+# OTA Updates
+ADDITIONAL_BUILD_PROPERTIES += ro.ota.manifest=http://android.comtek-wiebe.de/BlissPop/sm-t530/ota/ota4.xml
+
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
