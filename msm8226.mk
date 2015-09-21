@@ -33,15 +33,6 @@ TARGET_SCREEN_WIDTH := 1280
 #Bliss Audio Mod
 BLISS_AUDIO_MOD := viper
 
-# Packs
-PRODUCT_PACKAGES += \
-	libssh \
-	ssh \
-	sftp \
-	scp \
-	sshd \
-	ssh-keygen
-
 # Dalvik VM config for 1536MB (1.5GB) RAM devices
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
